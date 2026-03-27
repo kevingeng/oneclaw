@@ -38,6 +38,11 @@
       platformUrl: "https://platform.openai.com?utm_source=oneclaw",
       models: ["gpt-5.4", "gpt-5.2", "gpt-5.2-codex"],
     },
+    yidongyun: {
+      placeholder: "sk-...",
+      platformUrl: "https://myplatform.chinamobile.com.cn?utm_source=oneclaw_cm",
+      models: ["my-model-fast", "my-model-core", "my-model-max"],
+    },
     google: {
       placeholder: "AI...",
       platformUrl: "https://aistudio.google.com?utm_source=oneclaw",
@@ -3991,7 +3996,7 @@
       var names = { "moonshot-cn": "Kimi 开放平台（企业用户）", "moonshot-ai": "Moonshot AI", "kimi-code": "Kimi 会员订阅" };
       return names[subPlatform] || "Kimi";
     }
-    var map = { anthropic: "Anthropic", openai: "OpenAI", google: "Google", custom: "Custom" };
+    var map = { anthropic: "Anthropic", openai: "OpenAI", yidongyun: "移动云", google: "Google", custom: "Custom" };
     return map[provider] || provider;
   }
 

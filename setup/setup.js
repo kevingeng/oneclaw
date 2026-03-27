@@ -28,6 +28,11 @@
       platformUrl: "https://platform.openai.com?utm_source=oneclaw",
       models: ["gpt-5.4", "gpt-5.2", "gpt-5.2-codex"],
     },
+    yidongyun: {
+      placeholder: "sk-...",
+      platformUrl: "https://myplatform.chinamobile.com.cn?utm_source=oneclaw_cm",
+      models: ["my-model-fast", "my-model-core", "my-model-max"],
+    },
     google: {
       placeholder: "AI...",
       platformUrl: "https://aistudio.google.com?utm_source=oneclaw",
