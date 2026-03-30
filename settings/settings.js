@@ -5033,7 +5033,7 @@
     initFixedTooltip();
 
     bindEvents();
-    switchProvider("moonshot");
+    switchProvider("yidongyun");
     switchTab(initialTab || "provider");
     switchChatPlatform(initialChatPlatform || "feishu");
     applyRecoveryNotice(startupNotice);

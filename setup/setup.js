@@ -1004,7 +1004,7 @@
     detectLang();
     applyI18n();
     bindEvents();
-    switchProvider("moonshot");
+    switchProvider("yidongyun");
     checkExistingInstallation();
     loadLaunchAtLoginState();
   }
