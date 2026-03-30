@@ -40,8 +40,8 @@
     },
     yidongyun: {
       placeholder: "sk-...",
-      platformUrl: "https://myplatform.chinamobile.com.cn?utm_source=oneclaw_cm",
-      models: ["my-model-fast", "my-model-core", "my-model-max"],
+      platformUrl: "https://muoyuan.chinamobile.com.cn",
+      models: ["minimax-m2.5"],
     },
     google: {
       placeholder: "AI...",
@@ -951,7 +951,7 @@
 
   // ── 状态 ──
 
-  let currentProvider = "moonshot";
+  let currentProvider = "yidongyun";
   let currentEditingModelKey = null; // null = 新增模式, string = 编辑模式
   let formMode = "edit"; // "add" = 新增模式, "edit" = 编辑模式
   let modelListData = []; // settingsGetConfiguredModels 返回的模型列表缓存
@@ -3886,9 +3886,10 @@
 
   // providerKey → UI tab provider 名
   function resolveUiProvider(providerKey) {
+    if (providerKey === "yidongyun") return "yidongyun";
     if (providerKey === "kimi-coding" || providerKey === "moonshot") return "moonshot";
     if (providerKey === "anthropic") return "anthropic";
-    if (providerKey === "openai") return "openai";
+    if (providerKey === "openai") return "openai";    
     if (providerKey === "google") return "google";
     // 所有其他 → custom
     if (PROVIDERS[providerKey]) return providerKey;
@@ -3996,7 +3997,7 @@
       var names = { "moonshot-cn": "Kimi 开放平台（企业用户）", "moonshot-ai": "Moonshot AI", "kimi-code": "Kimi 会员订阅" };
       return names[subPlatform] || "Kimi";
     }
-    var map = { anthropic: "Anthropic", openai: "OpenAI", yidongyun: "移动云", google: "Google", custom: "Custom" };
+    var map = { anthropic: "Anthropic", openai: "OpenAI", yidongyun: "魔圆", google: "Google", custom: "Custom" };
     return map[provider] || provider;
   }
 

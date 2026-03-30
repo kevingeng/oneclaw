@@ -30,8 +30,8 @@
     },
     yidongyun: {
       placeholder: "sk-...",
-      platformUrl: "https://myplatform.chinamobile.com.cn?utm_source=oneclaw_cm",
-      models: ["my-model-fast", "my-model-core", "my-model-max"],
+      platformUrl: "https://muoyuan.chinamobile.com.cn",
+      models: ["minimax-m2.5"],
     },
     google: {
       placeholder: "AI...",
@@ -310,7 +310,7 @@
 
   // ---- 状态 ----
   let currentStep = 1;
-  let currentProvider = "moonshot";
+  let currentProvider = "yidongyun";
   let verifying = false;
   let starting = false;
   let currentLang = "en";
