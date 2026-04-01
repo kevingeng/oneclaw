@@ -1,5 +1,12 @@
 [
   {
+    "version": "2026.328.4",
+    "notes": {
+      "zh": "新增反馈功能\n新增思考模式：发送消息时可开启深度思考，支持多级别切换\n修复钉钉、微信渠道兼容性问题\n修复 Kimi 登录偶发失效问题\n优化微信连接体验\nAPI 错误提示更清晰\n会话列表自动刷新",
+      "en": "Add feedback feature\nAdd thinking mode: enable deep reasoning when sending messages with multiple thinking levels\nFix DingTalk and WeChat channel compatibility issues\nFix occasional Kimi login issues\nImprove WeChat connection experience\nClearer API error messages\nAuto-refresh session list"
+    }
+  },
+  {
     "version": "2026.322.4",
     "notes": {
       "zh": "新增微信聊天支持\n新增高级记忆功能和定时任务查看\nUI 交互体验优化\n命令行功能修复\nWindows 升级体验优化",
